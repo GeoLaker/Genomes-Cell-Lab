@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://GeoLaker.github.io/Genomes-Cell-Lab/sitemap.xml
