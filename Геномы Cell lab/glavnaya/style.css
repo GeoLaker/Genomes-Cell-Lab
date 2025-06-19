@@ -1,0 +1,427 @@
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Шапка */
+.header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Меню */
+.navbar {
+    background-color: #34495e;
+    padding: 10px 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-links li a:hover {
+    background-color: #2c3e50;
+}
+
+.nav-links li a.active {
+    background-color: #1abc9c;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Контент */
+.main-content {
+    flex: 1;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px 40px;
+}
+
+.intro {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro h2 {
+    color: #2c3e50;
+    margin-top: 0;
+}
+
+/* Кнопка Telegram */
+.telegram-button {
+    background-color: #0088cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s;
+}
+
+.telegram-button:hover {
+    background-color: #0077b5;
+}
+
+/* Подвал */
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    margin-top: auto; /* Прижимаем к низу */
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Стили для раздела модов */
+.mods-section {
+    margin-top: 30px;
+}
+
+.mods-section h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Стили карточки мода */
+.mod-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mod-images {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.mod-images img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex: 1;
+    aspect-ratio: 1/1;
+}
+
+.mod-button {
+    display: inline-block;
+    background-color: #1abc9c;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.mod-button:hover {
+    background-color: #16a085;
+}
+
+/* Кнопка скачивания APK */
+.download-apk-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.download-apk-button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* ===== НОВАЯ КАРТОЧКА 1:1 ===== */
+.genome-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 320px;
+}
+
+.genome-image-container {
+    width: 100%;
+    aspect-ratio: 1/1;
+    margin-bottom: 15px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.genome-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.genome-card:hover img {
+    transform: scale(1.03);
+}
+
+.genome-info h3 {
+    color: #2c3e50;
+    margin: 10px 0 5px;
+}
+
+.genome-button {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+/* Адаптация */
+@media (max-width: 768px) {
+    .main-content {
+        padding-bottom: 80px;
+    }
+    
+    .genome-card {
+        max-width: 100%;
+    }
+    
+    .nav-links {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .mod-images {
+        flex-direction: column;
+    }
+    
+    .mod-images img {
+        height: 150px;
+    }
+
+}
+.download-apk-button {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.download-apk-button.downloading {
+    transform: translateY(3px);
+    box-shadow: none;
+}
+
+.download-apk-button.downloading::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #4CAF50, #2E7D32);
+    animation: downloadProgress 1s linear;
+}
+
+@keyframes downloadProgress {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+/* Общий стиль для всех кнопок */
+.download-button {
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s;
+}
+/* Стиль для Genome (синяя) */
+.genome-button {
+    background-color: #2196F3;
+}
+.genome-button:hover {
+    background-color: #0b7dda;
+}
+
+/* Стиль для Substrate (фиолетовая) */
+.substrate-button {
+    background-color: #9C27B0;
+}
+.substrate-button:hover {
+    background-color: #7B1FA2;
+}
+
+/* Анимация нажатия */
+.download-button:active {
+    transform: translateY(2px);
+
+}
+/* Только критичные изменения (добавлено в конец файла) */
+
+/* Фикс для навигации */
+.nav-links li a.active {
+    background-color: #1abc9c !important; /* Перебивает другие стили */
+    font-weight: bold !important;
+}
+
+/* Цвета кнопок (не ломают существующие) */
+.telegram-btn { background-color: #0088cc; }
+.apk-btn { background-color: #4CAF50; }
+.genome-btn { background-color: #2196F3; }
+.substrate-btn { background-color: #9C27B0; 
+}
+/* Стили для кнопок скачивания */
+/* Удаляем все предыдущие стили для .download-btn и добавляем новые */
+
+/* Базовые стили для всех кнопок скачивания */
+.download-btn {
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    text-decoration: none;
+}
+
+/* Стиль для Genome (синяя) */
+.download-btn.genome {
+    background-color: #2196F3;
+}
+.download-btn.genome:hover {
+    background-color: #0b7dda;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Стиль для Substrate (фиолетовая) */
+.download-btn.substrate {
+    background-color: #9C27B0;
+}
+.download-btn.substrate:hover {
+    background-color: #7B1FA2;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Анимация нажатия */
+.download-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+/* ===== ТЕКСТОВАЯ КАРТОЧКА (АДАПТИВ) ===== */
+.text-card {
+    background: white;
+    border-radius: 8px;
+    padding: clamp(12px, 3vw, 20px); /* Гибкие отступы */
+    margin-bottom: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    width: 100%; /* Занимает всю ширину контейнера */
+    box-sizing: border-box; /* Чтобы padding не ломал ширину */
+}
+
+/* Для узких экранов (до 480px) */
+@media (max-width: 480px) {
+    .text-card {
+        border-radius: 6px; /* Чуть меньше скругление */
+        box-shadow: 0 1px 2px rgba(0,0,0,0.1); /* Более легкая тень */
+    }
+}
+/* Гарантированная изоляция текстовой карточки */
+.text-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto; /* Отступ от других элементов */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 900px; /* Ограничение ширины */
+    box-sizing: border-box;
+}
+
+/* Сброс наследования стилей внутри карточки */
+.text-card * {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+}
+
+.text-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.text-card p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
