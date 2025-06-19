@@ -1,2 +1,2 @@
 # Genomes-Cell-Lab
-Репозиторий для сайта тгк Геномы Cell Lab
+для сайта тгк Геномы Cell Lab
