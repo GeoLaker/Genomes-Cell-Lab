@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     // 1. Кнопка Telegram (переход в мессенджер)
     document.getElementById('telegramBtn')?.addEventListener('click', function() {
-        window.location.href = 'https://t.me/mel0n_mod';
+        window.location.href = 'https://t.me/genomes_cl';
     });
 
     // 2. Улучшенная подсветка активной страницы
